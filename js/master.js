@@ -12,15 +12,15 @@ var t; // timer
 function toggle() {
     if (status == PREPARE_TO_WORK) {
         document.getElementById("toggle_button").innerHTML = 'STOP';
-        m = 0;
-        s = 5;
+        m = 25;
+        s = 0;
         status = ON_WORK;
         countDown();
     }
     else if (status == PREPARE_TO_BREAK) {
         document.getElementById("toggle_button").innerHTML = 'STOP';
-        m = 0;
-        s = 2;
+        m = 5;
+        s = 0;
         status = ON_BREAK;
         countDown();
     }
